@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BebaAgua.NaoNotifiquePage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Selecionar" x:Name="btnSelecionar" Order="Primary" Priority="1" Clicked="btnSelecionar_Clicked"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+
+            <ListView x:Name="listView" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Margin="2">
+                            <Image x:Name="ImageList" Source="relogio.png" WidthRequest="50" HeightRequest="50"></Image>
+                                <Label Text="{Binding HorarioInicio}" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand"/>
+                                <Label Text="até" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand"></Label>
+                                <Label Text="{Binding HorarioFim}" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView x:Name="listView2" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Margin="2">
+                            <Image x:Name="ImageList" Source="relogio.png" WidthRequest="50" HeightRequest="50"></Image>
+                                <Label Text="{Binding HorarioInicio}" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand"/>
+                                <Label Text="até"  VerticalOptions="CenterAndExpand"  HorizontalOptions="StartAndExpand"></Label>
+                                <Label Text="{Binding HorarioFim}" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand"/>
+                                <Switch IsToggled="{Binding SwitchEnable}"></Switch>
+                            </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+            
+        <StackLayout x:Name="ButtonsStackLayout" VerticalOptions="Start">
+                <Button Text="Adicionar" x:Name="btnAdicionar" IsVisible="True" Clicked="btnAdicionar_Clicked"></Button>
+                <Label x:Name="lblPicker" Text="Escolha um horário que iniciará" HorizontalOptions="CenterAndExpand" IsVisible="False"></Label>
+                <TimePicker x:Name="PickerAdd" IsVisible="False"></TimePicker>
+                <Label x:Name="lblPicker2" Text="Escolha um horário que terminará" HorizontalOptions="CenterAndExpand" IsVisible="False"></Label>
+                <TimePicker x:Name="PickerAdd2" IsVisible="False"></TimePicker>
+                <Button Text="Concluir" x:Name="btnConcluir" IsVisible="False" Clicked="btnConcluir_Clicked"></Button>
+
+                <Button Text="Excluir" x:Name="btnExcluir" IsVisible="False" Clicked="btnExcluir_Clicked"></Button>
+        </StackLayout>
+    </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

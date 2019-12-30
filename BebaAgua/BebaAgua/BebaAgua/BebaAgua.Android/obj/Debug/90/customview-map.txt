@@ -1,0 +1,7 @@
+android.support.design.widget.TabLayout;obj\Debug\90\res\layout\tabbar.xml
+android.support.v7.widget.Toolbar;obj\Debug\90\res\layout\toolbar.xml
+item;obj\Debug\90\res\values\styles.xml
+resources;D:\Source\Workspaces\Beba Agua\BebaAgua\BebaAgua\BebaAgua.Android\obj\Debug\90\lp\1\jl\res\values\strings.xml
+resources;obj\Debug\90\res\values\styles.xml
+string;D:\Source\Workspaces\Beba Agua\BebaAgua\BebaAgua\BebaAgua.Android\obj\Debug\90\lp\1\jl\res\values\strings.xml
+style;obj\Debug\90\res\values\styles.xml

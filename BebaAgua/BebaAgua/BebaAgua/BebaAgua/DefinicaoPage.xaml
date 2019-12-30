@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BebaAgua.DefinicaoPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout  VerticalOptions="Start" Margin="10">
+
+                <Label Text="Peso" TextColor="Black" Margin="10" ></Label>
+                <Entry Keyboard="Numeric" x:Name="EntryPeso" Unfocused="EntryPeso_Unfocused" Placeholder = "Insira Seu Peso " TextColor="Black" Margin="10" ></Entry>
+
+
+
+                <Picker x:Name="PickerCopo" SelectedIndexChanged="PickerCopoChanged" Title="Unidade de Volume do Copo"  TextColor="Black" Margin="10"  >
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>ml</x:String>
+                            <x:String>oz</x:String>
+
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+                <Picker x:Name="PickerPeso" SelectedIndexChanged="PickerPesoChanged" Title="Unidade de Peso"  TextColor="Black" Margin="10" >
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>kg</x:String>
+                            <x:String>lb</x:String>
+
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+
+
+
+                <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                    <Button Text="Restaurar Configurações" x:Name="btnRestaurar"  Clicked="btnRestaurar_Clicked"  TextColor="Black" Margin="10" ></Button>
+                    <Button Text="Restaurar Histórico"  x:Name="btnRestaurarHistorico"   Clicked="btnRestaurarHistorico_Clicked"  TextColor="Black" Margin="10" ></Button>
+
+
+                </StackLayout>
+
+                   
+
+
+            </StackLayout>
+        </ScrollView>
+       
+    </ContentPage.Content>
+</ContentPage>

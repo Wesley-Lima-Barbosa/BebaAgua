@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BebaAgua</id>
+    <version>1.0.0</version>
+    <authors>BebaAgua</authors>
+    <owners>BebaAgua</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microcharts.Forms" version="0.8.3-pre" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Forms" version="2.5.0.122203" exclude="Build,Analyzers" />
+        <dependency id="sqlite-net-pcl" version="1.5.231" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netstandard2.0/Images/Canecaml.png" buildAction="Content" />
+      <files include="any/netstandard2.0/Images/Canecaoz.png" buildAction="Content" />
+      <files include="any/netstandard2.0/Images/Copoml.png" buildAction="Content" />
+      <files include="any/netstandard2.0/Images/Copooz.png" buildAction="Content" />
+      <files include="any/netstandard2.0/Images/Garrafaml.png" buildAction="Content" />
+      <files include="any/netstandard2.0/Images/Garrafaoz.png" buildAction="Content" />
+      <files include="any/netstandard2.0/Images/Jarra.png" buildAction="Content" />
+      <files include="any/netstandard2.0/Images/Xicaraml.png" buildAction="Content" />
+      <files include="any/netstandard2.0/Images/Xicaraoz.png" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua\bin\Release\netstandard2.0\BebaAgua.dll" target="lib\netstandard2.0\BebaAgua.dll" />
+    <file src="D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua\Images\Canecaml.png" target="content\Images\Canecaml.png" />
+    <file src="D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua\Images\Canecaml.png" target="contentFiles\any\netstandard2.0\Images\Canecaml.png" />
+    <file src="D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua\Images\Canecaoz.png" target="content\Images\Canecaoz.png" />
+    <file src="D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua\Images\Canecaoz.png" target="contentFiles\any\netstandard2.0\Images\Canecaoz.png" />
+    <file src="D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua\Images\Copoml.png" target="content\Images\Copoml.png" />
+    <file src="D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua\Images\Copoml.png" target="contentFiles\any\netstandard2.0\Images\Copoml.png" />
+    <file src="D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua\Images\Copooz.png" target="content\Images\Copooz.png" />
+    <file src="D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua\Images\Copooz.png" target="contentFiles\any\netstandard2.0\Images\Copooz.png" />
+    <file src="D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua\Images\Garrafaml.png" target="content\Images\Garrafaml.png" />
+    <file src="D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua\Images\Garrafaml.png" target="contentFiles\any\netstandard2.0\Images\Garrafaml.png" />
+    <file src="D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua\Images\Garrafaoz.png" target="content\Images\Garrafaoz.png" />
+    <file src="D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua\Images\Garrafaoz.png" target="contentFiles\any\netstandard2.0\Images\Garrafaoz.png" />
+    <file src="D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua\Images\Jarra.png" target="content\Images\Jarra.png" />
+    <file src="D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua\Images\Jarra.png" target="contentFiles\any\netstandard2.0\Images\Jarra.png" />
+    <file src="D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua\Images\Xicaraml.png" target="content\Images\Xicaraml.png" />
+    <file src="D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua\Images\Xicaraml.png" target="contentFiles\any\netstandard2.0\Images\Xicaraml.png" />
+    <file src="D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua\Images\Xicaraoz.png" target="content\Images\Xicaraoz.png" />
+    <file src="D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua\Images\Xicaraoz.png" target="contentFiles\any\netstandard2.0\Images\Xicaraoz.png" />
+  </files>
+</package>

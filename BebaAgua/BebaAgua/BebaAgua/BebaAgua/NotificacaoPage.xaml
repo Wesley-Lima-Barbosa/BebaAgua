@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BebaAgua.NotificacaoPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="Start" Margin="10" >
+
+                <StackLayout Orientation="Horizontal" Margin="10">
+                    <Label Text="Habilitar Notificações" ></Label>
+                    <Switch x:Name="switch_notificar" Toggled="notificar" HorizontalOptions = "EndAndExpand"></Switch>
+                </StackLayout>
+
+                <Label Text="Tempo de Lembrete" Margin="10"></Label>
+
+                <StackLayout Margin="10">
+                    <Slider x:Name="slider_lembrete" Maximum="360" Minimum="1" PropertyChanged="altera_valor"></Slider>
+                    <Label x:Name="valor_minutos" HorizontalOptions="CenterAndExpand"></Label>
+                </StackLayout>
+
+
+                <Label Text="Intervalo das Notificações" FontSize="Medium" Margin="10"></Label>
+
+                
+                <StackLayout Orientation="Horizontal" Margin="10">
+                    <Label Text="Vibração" ></Label>
+                    <Switch x:Name="switch_vibrar"  HorizontalOptions = "EndAndExpand" ></Switch>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Margin="10">
+                    <Label Text="LED" ></Label>
+                    <Switch x:Name="switch_led"  HorizontalOptions = "EndAndExpand"></Switch>
+                </StackLayout>
+
+                <Button Text="Não Perturbe" x:Name="btnNaoPerturbe"  Clicked="btnNaoPerturbe_Clicked"  TextColor="Black" Margin="10" ></Button>
+
+            </StackLayout>
+            
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

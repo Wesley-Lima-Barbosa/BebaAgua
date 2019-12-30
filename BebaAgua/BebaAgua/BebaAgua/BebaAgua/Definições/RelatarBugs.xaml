@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BebaAgua.Definições.RelatarBugs">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder = "Relatar Problema" BackgroundColor="Transparent" TextColor="#111111" ></Entry>
+            <Entry Placeholder = "Insire um E-mail" BackgroundColor="Transparent" TextColor="#111111" ></Entry>
+            <Button Text="Enviar" TextColor="#111111" ></Button>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

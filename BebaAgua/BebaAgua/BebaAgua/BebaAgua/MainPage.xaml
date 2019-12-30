@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BebaAgua.MainPage"
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms" >
+    <ContentPage.Content >
+
+        <StackLayout Orientation = "Vertical" VerticalOptions="Start" HorizontalOptions="Center">
+            <microcharts:ChartView x:Name="Chart1"  
+                               HeightRequest="280"/>
+            <StackLayout Orientation="Vertical" Margin="5" HorizontalOptions="End" >
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <StackLayout Orientation="Vertical" HorizontalOptions="End">
+                        <Label Text="Valor Bebido"></Label>
+                        <Label x:Name="LabelBebido" HorizontalOptions="End"></Label>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <BoxView Color="#FF1943" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"></BoxView>
+                        <BoxView Color="#00CED1" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"></BoxView>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="Start" Margin="5,0,0,0">
+                        <Label x:Name="lblmeta" Text="Restante da Meta"></Label>
+                        <Label x:Name="LabelMeta" HorizontalOptions="Start"></Label>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Image x:Name="CopoImage">
+                        <Image.WidthRequest>
+                            <OnPlatform x:TypeArguments="x:Double" Android="75" iOS="75" WinPhone="75" Default="200"></OnPlatform>
+                        </Image.WidthRequest>
+                        <Image.HeightRequest>
+                            <OnPlatform x:TypeArguments="x:Double" Android="75" iOS="75" WinPhone="75" Default="200"></OnPlatform>
+                        </Image.HeightRequest>
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="2" Tapped="CopoTap"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image x:Name="XicaraImage">
+                        <Image.WidthRequest>
+                            <OnPlatform x:TypeArguments="x:Double" Android="75" iOS="75" WinPhone="75" Default="200"></OnPlatform>
+                        </Image.WidthRequest>
+                        <Image.HeightRequest>
+                            <OnPlatform x:TypeArguments="x:Double" Android="75" iOS="75" WinPhone="75" Default="200"></OnPlatform>
+                        </Image.HeightRequest>
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="2" Tapped="XicaraTap"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                    <Image x:Name="CanecaImage">
+                        <Image.WidthRequest>
+                            <OnPlatform x:TypeArguments="x:Double" Android="75" iOS="75" WinPhone="75" Default="200"></OnPlatform>
+                        </Image.WidthRequest>
+                        <Image.HeightRequest>
+                            <OnPlatform x:TypeArguments="x:Double" Android="75" iOS="75" WinPhone="75" Default="200"></OnPlatform>
+                        </Image.HeightRequest>
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="2" Tapped="CanecaTap"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image x:Name="GarrafaImage">
+                        <Image.WidthRequest>
+                            <OnPlatform x:TypeArguments="x:Double" Android="75" iOS="75" WinPhone="75" Default="200"></OnPlatform>
+                        </Image.WidthRequest>
+                        <Image.HeightRequest>
+                            <OnPlatform x:TypeArguments="x:Double" Android="75" iOS="75" WinPhone="75" Default="200"></OnPlatform>
+                        </Image.HeightRequest>
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="2" Tapped="GarrafaTap"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+
+
+                </StackLayout>
+                <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Margin="5">
+                    <Entry x:Name="EntryQuant" Placeholder="Digite a quantidade" VerticalOptions="Fill" Keyboard="Numeric"></Entry>
+                    <Image Source="Jarra.png" x:Name="JarraImage">
+                        <Image.WidthRequest>
+                            <OnPlatform x:TypeArguments="x:Double" Android="75" iOS="75" WinPhone="75" Default="200"></OnPlatform>
+                        </Image.WidthRequest>
+                        <Image.HeightRequest>
+                            <OnPlatform x:TypeArguments="x:Double" Android="75" iOS="75" WinPhone="75" Default="200"></OnPlatform>
+                        </Image.HeightRequest>
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="2" Tapped="JarraTap"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                </StackLayout>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

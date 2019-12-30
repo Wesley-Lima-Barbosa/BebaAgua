@@ -1,0 +1,1 @@
+D:\Source\Workspaces\Beba Água!\BebaAgua\BebaAgua\BebaAgua.UWP\BebaAgua.UWP.csproj;x64
